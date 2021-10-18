@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 .Header {
     display: flex;
-    padding: 1rem;
+    justify-content: space-around;
+    padding: 0% 20%;
+    background-color: #2b2a2a;
+    color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .Header__myName {
-    
+    font-size: 2.5rem;
 }
 
 .Header__linkCluster {
+    
 
 }
 
 .Header__link {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
 
 }
