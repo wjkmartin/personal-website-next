@@ -5,24 +5,54 @@
     justify-content: space-around;
     padding: 0% 20%;
     background-color: #2b2a2a;
-    color: whitesmoke;
-    width: 100%;
+    color: #fcfcfc;
+    width: 100vw;
     margin: 0;
     align-items: center;
     font-family: 'Fjalla One', sans-serif;
+    min-height: 3.5rem;
+    border-top: .3rem solid #2b2a2a;
 }
 
 .Header__myName {
-    font-size: 2.5rem;
+    font-size: 2rem !important;
+    min-width: 165px !important;
 }
 
 .Header__linkCluster {
-    
-
+    display: flex;
+    height: 100%;
+    align-items: center;   
 }
 
 .Header__link {
+    display: inline-block;
+    text-align: center;
     margin: 0 0.5rem;
     font-size: 1.5rem;
+    padding: 1rem .25rem 1.25rem .25rem;
+    border-top: .3rem solid #2b2a2a;
+    pointer-events:stroke; 
+}
+
+.Header__link_currentRoute {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    background-color: #fcfcfc;
+    color: #2b2a2a;
+    padding: 1rem .25rem 1.25rem .25rem;
+    border-top: .3rem solid #2b2a2a;
+    pointer-events:stroke;
+}
+
+.Header__modal {
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+    margin-left: 4rem;
+}
+
+.Header__modal_icon {
 
 }

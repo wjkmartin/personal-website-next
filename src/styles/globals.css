@@ -17,3 +17,8 @@ a {
   box-sizing: border-box;
 }
 
+main {
+  width: 75vw;
+  height: 100vh;
+  margin-bottom: 4rem;
+}
