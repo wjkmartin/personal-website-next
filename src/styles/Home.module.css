@@ -10,7 +10,6 @@
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: auto;
   line-height: 1.75;
   font-size: 1.25rem;

@@ -53,6 +53,7 @@
     width: 100%;
     font-size: 3em;
     margin-left: 4rem;
+    min-width: 50px;
 }
 
 .Header__modal_icon {

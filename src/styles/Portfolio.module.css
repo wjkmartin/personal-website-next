@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  max-height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  line-height: 1.75;
+  font-size: 1.25rem;
+}
+
+.Portfolio__linkBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: fcfcfc;
+  max-height: 3rem;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  min-width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Portfolio__linkBar_link {
+    padding: 0 .25rem;
+}
+
+.Portfolio__linkBar_link:hover {
+    color: white;
+    padding: 0 .25rem;
+    background-color: #2b2a2a;
+}
