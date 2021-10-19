@@ -30,9 +30,10 @@
     text-align: center;
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    padding: 1rem .25rem 1.25rem .25rem;
+    padding: 1rem .25rem 1.4rem .25rem;
     border-top: .3rem solid #2b2a2a;
     pointer-events:stroke; 
+    height: 100%;
 }
 
 .Header__link_currentRoute {
@@ -41,9 +42,10 @@
     font-size: 1.5rem;
     background-color: #fcfcfc;
     color: #2b2a2a;
-    padding: 1rem .25rem 1.25rem .25rem;
+    padding: 1rem .25rem 1.4rem .25rem;
     border-top: .3rem solid #2b2a2a;
     pointer-events:stroke;
+    height: 100%;
 }
 
 .Header__modal {
