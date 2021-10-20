@@ -1,15 +1,15 @@
 import Header from '../common/Header';
 import _Head from '../common/_Head';
-import styles from '../styles/Home.module.css';
+import commonStyles from '../styles/commonStyles.module.css'
 
 export default function Blog() {
   return (
-    <div className={styles.container}>
+    <div className={commonStyles.container}>
       <_Head />
       <Header />
-      <main className={styles.main}>BLOG</main>
+      <main className={commonStyles.main}>BLOG</main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={commonStyles.footer}></footer>
     </div>
   );
 }

@@ -14,11 +14,6 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
-main {
-  width: 75vw;
-  height: 100vh;
-  margin-bottom: 4rem;
-}

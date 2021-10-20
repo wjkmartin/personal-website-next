@@ -10,7 +10,7 @@ const HeaderModal = () => {
 
   const dropdown = (
     <div className={styles.Header__modal_dropDown}>
-      <HeaderLink href="/about" text="ABOUT"/>
+      {/* <HeaderLink href="/about" text="ABOUT"/> */}
       <HeaderLink href="/blog" text="BLOG" />
       <HeaderLink href="/portfolio" text="PORTFOLIO" />
       <HeaderLink href="/contact" text="CONTACT" />

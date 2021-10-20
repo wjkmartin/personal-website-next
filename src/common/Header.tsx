@@ -37,7 +37,7 @@ const Header = () => {
 
   const navBar = (
     <div className={styles.Header__linkCluster}>
-      <HeaderLink text="ABOUT" href="/about" currentRoute={currentRoute} />
+      {/* <HeaderLink text="ABOUT" href="/about" currentRoute={currentRoute} /> */}
       <HeaderLink text="BLOG" href="/blog" currentRoute={currentRoute} />
       <HeaderLink
         text="PORTFOLIO"
@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <div className={styles.Header}>
       <HeaderLink text="WILL MARTIN" href="/" currentRoute={currentRoute} />
-      {windowSize.width <= 550 ? <HeaderModal /> : navBar}
+      {windowSize.width <= 700 ? <HeaderModal /> : navBar}
     </div>
   );
 };
