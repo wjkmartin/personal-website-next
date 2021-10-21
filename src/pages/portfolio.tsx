@@ -40,7 +40,7 @@ export default function Portfolio() {
           >
             You can find it on Github here
           </a>
-          <h4>What I've learned on this project thus far:</h4>
+          <h4>What I&apos;ve learned on this project thus far:</h4>
           <ul>
             <li>
               {' '}
@@ -68,15 +68,15 @@ export default function Portfolio() {
           </ul>
           <p>
             All that being said - I still feel the urge to start all over again.
-            I've been working on this project part time for the past year, and I
-            feel like with what I've learned in that time alone it's justifiable
+            I&apos;ve been working on this project part time for the past year, and I
+            feel like with what I&apos;ve learned in that time alone it&apos;s justifiable
             to start over and restructure things and use new techs, such as
             Redux Toolkit.
           </p>
-          <h3>Where it's going next:</h3>
+          <h3>Where it&apos;s going next:</h3>
           <ul>
             <li>
-              Polish in the styling. There's still default styles quite a few
+              Polish in the styling. There&apos;s still default styles quite a few
               components.
             </li>
             <li>
@@ -86,7 +86,7 @@ export default function Portfolio() {
             </li>
             <li>
               Performance pass. The combat movement animations stutter a little
-              when there's multiple enemies. This is likely due to rerendering
+              when there&apos;s multiple enemies. This is likely due to rerendering
               at just the wrong time - I still have to explore that bug more
               thouroughly.
             </li>
