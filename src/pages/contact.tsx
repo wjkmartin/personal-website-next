@@ -12,12 +12,13 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   async function sendEmail(e) {
+    setSubmitted(true)
     e.preventDefault();
 
     const data = {
-      nameInput,
-      emailInput,
-      messageInput,
+      name: nameInput,
+      email: emailInput,
+      message: messageInput,
     };
 
     fetch('/api/contact', {
@@ -31,7 +32,7 @@ export default function Contact() {
       console.log('Response received');
       if (res.status === 200) {
         console.log('Response succeeded!');
-        setSubmitted(true);
+        (true);
         setNameInput('');
         setEmailInput('');
         setMessageInput('');
@@ -82,15 +83,22 @@ export default function Contact() {
                 className={styles.Contact__largeField_input}
               ></textarea>
             </div>
-            <button
+            {(submitted ? <button
+              className={`${styles.Contact_button} ${styles.Contact_button_sent}`}
+              onClick={(e)=>{e.preventDefault();}}
+            >
+              THANK YOU, I'LL CHECK IT OUT
+            </button> : <button
               type="submit"
               onClick={(e) => {
+                setSubmitted(true)
                 sendEmail(e);
               }}
               className={styles.Contact_button}
             >
               SEND IT!
-            </button>
+            </button>)}
+            
           </form>
         </div>
       </main>

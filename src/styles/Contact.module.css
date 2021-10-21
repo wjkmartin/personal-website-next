@@ -63,3 +63,7 @@
 .Contact_button:hover {
     color: #d1cfcf;
 }
+
+.Contact_button_sent:hover {
+    color: #fcfcfc !important;
+}
