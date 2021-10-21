@@ -18,6 +18,12 @@ export default function Portfolio() {
           </a>
           <a
             className={styles.Portfolio__linkBar_link}
+            href="https://leetcode.com/wjkmartin/"
+          >
+            <span style={{ filter: 'grayscale(.95)' }}>🌟</span> L33tCode
+          </a>
+          <a
+            className={styles.Portfolio__linkBar_link}
             href="https://www.hackerrank.com/wjkmartin"
           >
             <span style={{ filter: 'grayscale(.95)' }}>🥇</span> HackerRank
