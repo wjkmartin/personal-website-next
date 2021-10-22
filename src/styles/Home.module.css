@@ -1,0 +1,49 @@
+.Home__tagline {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.Home__portrait {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 18px solid #2b2a2a;
+    max-width: 200px;
+}
+
+.Home__portrait_image {
+    filter: grayscale(.95);
+}
+
+.Home__pupContainer {
+    display: flex;
+    align-items: center;
+    max-width: 125px;
+    max-height: 130px;
+    margin-right: 2rem;
+    outline: 5px solid #fcfcfc;
+    border-radius: 50px;
+}
+
+.Home__pupContainer_image {
+    border-radius: 50px;
+    filter: grayscale(.95);
+}
+
+.Home__hello {
+    display: flex;
+    flex-direction: column;
+}
+
+.Home__gameIntro {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 1.5rem;
+    width: 100vw;
+    min-height: 100px;
+    background-color: #2b2a2a;
+    color: #fcfcfc;
+}
+
