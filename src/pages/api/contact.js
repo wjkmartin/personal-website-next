@@ -15,7 +15,7 @@ export default async function handler(req, res) {
   const mailData = {
     from: '"Will Martin MailBot 🤖" <>', // sender address
     to: "wjkmartin@gmail.com", // list of receivers
-    subject: "This is a message from yer boi MailBot", // Subject line
+    subject: `This is a message from ${req.body.name} via yer boi MailBot`  , // Subject line
     text: `${req.body.message}`, // plain text body
     html: `<p>FROM: ${req.body.name}</p><p>EMAIL: ${req.body.email}</P <p>${req.body.message}</p>`, // html body
   };
