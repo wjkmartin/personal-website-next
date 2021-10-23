@@ -26,6 +26,7 @@
   align-items: center;
   margin-top: 1.5rem;
   padding: 0 3em;
+  border: 2px solid #43AA8B;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

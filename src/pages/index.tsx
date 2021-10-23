@@ -1,3 +1,7 @@
+import { useSelector } from 'react-redux';
+
+import {useState} from 'react';
+
 import Header from '../common/Header';
 
 import _Head from '../common/_Head';
@@ -10,8 +14,14 @@ import pup from '../../public/pup.jpg';
 import Game from '../components/Game';
 
 export default function Home() {
+  const grayscaleValue = useSelector(state => state).grayscale;
+  // truncate grayscale value to 2 decimal places
+  const grayscale = Math.trunc(grayscaleValue * 100) / 100;
+  console.log(grayscale);
+  const grayscaleStyle = {filter: `grayscale(${grayscale})`};
+  
   return (
-    <div className={commonStyles.container}>
+    <div style={grayscaleStyle} className={`${commonStyles.container}`}>
       <_Head />
       <Header />
       <main className={`${commonStyles.main} ${commonStyles.centered}`}>

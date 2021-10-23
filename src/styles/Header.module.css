@@ -2,14 +2,14 @@
 .Header {
     display: flex;
     justify-content: space-around;
-    background-color: #2b2a2a;
-    color: #fcfcfc;
+    background-color: #277DA1;
+    color: #F8961E;
     width: 100vw;
     margin: 0;
     align-items: center;
     font-family: 'Fjalla One', sans-serif;
     min-height: 3.5rem;
-    border-top: .3rem solid #2b2a2a;
+    border-top: .3rem solid #277DA1;
 }
 
 .Header__myName {
@@ -45,11 +45,11 @@
     margin: 0 0.5rem;
     font-size: 1.5rem;
     background-color: #fcfcfc;
-    color: #2b2a2a;
+    color: #277DA1;
     padding: 1rem .25rem 1.4rem .25rem;
     pointer-events:stroke;
     height: 100%;
-    text-shadow: 0px 1px 1px #2b2a2a;
+    text-shadow: 0px 1px 1px #277DA1;
 }
 
 .Header__modal {
@@ -66,6 +66,6 @@
     position: absolute;
     top: 75px;
     left: 65%;
-    background-color: #2b2a2a;
+    background-color: #277DA1;
     user-select: none;
 }
