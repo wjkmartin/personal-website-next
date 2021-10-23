@@ -15,9 +15,7 @@ import Game from '../components/Game';
 
 export default function Home() {
   const grayscaleValue = useSelector((state) => state).grayscale;
-  // truncate grayscale value to 2 decimal places
   const grayscale = Math.trunc(grayscaleValue * 100) / 100;
-  console.log(grayscale);
   const grayscaleStyle = { filter: `grayscale(${grayscale})` };
 
   return (

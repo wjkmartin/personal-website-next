@@ -5,6 +5,8 @@ import _Head from '../common/_Head';
 import commonStyles from '../styles/commonStyles.module.css';
 import styles from '../styles/Contact.module.css';
 
+import { useSelector } from 'react-redux';
+
 export default function Contact() {
   const [nameInput, setNameInput] = useState('');
   const [emailInput, setEmailInput] = useState('');
@@ -40,8 +42,12 @@ export default function Contact() {
     });
   }
 
+  const grayscaleValue = useSelector((state) => state).grayscale;
+  const grayscale = Math.trunc(grayscaleValue * 100) / 100;
+  const grayscaleStyle = { filter: `grayscale(${grayscale})` };
+
   return (
-    <div className={commonStyles.container}>
+    <div style={grayscaleStyle} className={commonStyles.container}>
       <_Head />
       <Header />
       <main className={commonStyles.main}>

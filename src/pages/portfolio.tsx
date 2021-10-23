@@ -3,9 +3,15 @@ import commonStyles from '../styles/commonStyles.module.css';
 import styles from '../styles/Portfolio.module.css';
 import Header from '../common/Header';
 
+import { useSelector } from 'react-redux';
+
 export default function Portfolio() {
+  const grayscaleValue = useSelector((state) => state).grayscale;
+  const grayscale = Math.trunc(grayscaleValue * 100) / 100;
+  const grayscaleStyle = { filter: `grayscale(${grayscale})` };
+
   return (
-    <div className={commonStyles.container}>
+    <div style={grayscaleStyle} className={commonStyles.container}>
       <_Head />
       <Header />
       <main className={commonStyles.main}>
