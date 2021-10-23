@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { RootState } from '../reducers';
 
 import { useState } from 'react';
 
@@ -14,7 +15,7 @@ import pup from '../../public/pup.jpg';
 import Game from '../components/Game';
 
 export default function Home() {
-  const grayscaleValue = useSelector((state) => state).grayscale;
+  const grayscaleValue = useSelector((state: RootState) => state).grayscale;
   const grayscale = Math.trunc(grayscaleValue * 100) / 100;
   const grayscaleStyle = { filter: `grayscale(${grayscale})` };
 

@@ -6,6 +6,7 @@ import commonStyles from '../styles/commonStyles.module.css';
 import styles from '../styles/Contact.module.css';
 
 import { useSelector } from 'react-redux';
+import { RootState } from '../reducers';
 
 export default function Contact() {
   const [nameInput, setNameInput] = useState('');
@@ -42,7 +43,7 @@ export default function Contact() {
     });
   }
 
-  const grayscaleValue = useSelector((state) => state).grayscale;
+  const grayscaleValue = useSelector((state: RootState) => state).grayscale;
   const grayscale = Math.trunc(grayscaleValue * 100) / 100;
   const grayscaleStyle = { filter: `grayscale(${grayscale})` };
 

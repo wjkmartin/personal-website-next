@@ -19,4 +19,6 @@ const reducers = {
   grayscale: grayscaleReducer,
 };
 
-export default combineReducers(reducers);
+export const rootReducer = combineReducers(reducers);
+
+export type RootState = ReturnType<typeof rootReducer>
