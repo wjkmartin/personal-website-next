@@ -7,6 +7,7 @@
     min-height: 100vh;
     box-sizing: border-box;
     overflow:auto;
+    overflow-x: hidden !important;
   }
   
   .main {
@@ -15,9 +16,9 @@
     flex-direction: column;
     line-height: 1.75;
     font-size: 1.25rem;
-    min-height: 100vh;
     min-width: 350px;
     color: #2b2a2a;
+    user-select: none;
 }
 
 .contentBox {
@@ -26,7 +27,7 @@
   align-items: center;
   margin-top: 1.5rem;
   padding: 0 3em;
-  border: 2px solid #43AA8B;
+  /* border: 2px solid #43AA8B; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

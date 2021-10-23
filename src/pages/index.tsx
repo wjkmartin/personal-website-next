@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 
-import {useState} from 'react';
+import { useState } from 'react';
 
 import Header from '../common/Header';
 
@@ -14,19 +14,21 @@ import pup from '../../public/pup.jpg';
 import Game from '../components/Game';
 
 export default function Home() {
-  const grayscaleValue = useSelector(state => state).grayscale;
+  const grayscaleValue = useSelector((state) => state).grayscale;
   // truncate grayscale value to 2 decimal places
   const grayscale = Math.trunc(grayscaleValue * 100) / 100;
   console.log(grayscale);
-  const grayscaleStyle = {filter: `grayscale(${grayscale})`};
-  
+  const grayscaleStyle = { filter: `grayscale(${grayscale})` };
+
   return (
     <div style={grayscaleStyle} className={`${commonStyles.container}`}>
       <_Head />
       <Header />
       <main className={`${commonStyles.main} ${commonStyles.centered}`}>
         <h1 className={styles.Home__tagline}>
-          A Full Stack Developer That&apos;s Apparently Afraid of Color
+          {grayscaleValue <= 0
+            ? 'A Full Stack Developer Who Loves Color'
+            : 'A Full Stack Developer Afraid of Color?'}
         </h1>
         <div className={styles.Home__portrait}>
           <Image
@@ -46,18 +48,18 @@ export default function Home() {
           <div className={styles.Home__hello}>
             <p>
               Pictured above is my best friend Will! We need your help to add
-              color to this site!
+              color to his site!
             </p>
             <p>
-              How? Play the game below and help me get Rainbones! The more I
-              get, the more energy I have to cheer up this site!
+              How? Feed me Rainbones below! The more I get, the more energy I
+              have to cheer up this site!
             </p>
           </div>
         </div>
-        <Game />
+        <div className={styles.Home__gameContainer}>
+          <Game />{' '}
+        </div>
       </main>
-
-      <footer className={commonStyles.footer}></footer>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux'
 import { incrementGrayscale, decrementGrayscale, resetGrayscale } from '../actions'
@@ -23,15 +23,23 @@ const Game = () => {
     );
   }
 
+  function drawBonesBar(ctx) {
+    ctx.fillStyle = '#E76F51';
+    ctx.strokeStyle = "#E9C46A";
+    ctx.strokeRect(10, 10, 430, 25);
+    ctx.fillRect(11, 11, 428 * (bonesCount / 10), 23);
+  }
+
   function drawHoverBone(ctx, cursorLoc) {
-    ctx.fillStyle = '#000000';
     let cursorY = cursorLoc.y;
     if (cursorY > 100) {
       cursorY = 100;
     } else if (cursorY < 50) {
       cursorY = 50;
     }
-    ctx.fillRect(cursorLoc.x, cursorY, 12, 12);
+    let rainbone = new Image(40, 40);
+    rainbone.src = 'rainbone_sm.png';
+    ctx.drawImage(rainbone, cursorLoc.x-10, cursorY-15);
   }
 
   function getMousePos(canvas, evt) {
@@ -62,18 +70,19 @@ const Game = () => {
 
   const drawBones = (ctx, frameCount) => {
     bones.forEach((bone) => {
-      ctx.fillRect(
+      let rainbone = new Image(40, 40);
+      rainbone.src = 'rainbone_sm.png';
+      
+      ctx.drawImage(rainbone,
         bone.x,
-        bone.y - 15 + 1.9 * (frameCount - bone.start),
-        12,
-        12
+        bone.y - 15 + 1.9 * (frameCount - bone.start)
       );
       bone.y = bone.y - 15 + (frameCount - bone.start);
     });
   };
 
   const draw = (ctx, frameCount, cursorPosition) => {
-    ctx.clearRect(0, 0, 300, 300);
+    ctx.clearRect(0, 0, 450, 400);
     let pupJaws = new Image(200, 200);
     pupJaws.src = 'pup_jaws.png';
     let pupJawsPos = {
@@ -89,19 +98,26 @@ const Game = () => {
     };
 
     ctx.drawImage(pupJaws, pupJawsPos.x, pupJawsPos.y);
+    ctx.fillStyle = 'rgba(225,225,225,0)';
     ctx.fillRect(
       collisionRect.x,
       collisionRect.y,
       collisionRect.width,
       collisionRect.height
     );
-
-    ctx.font = '20px Arial';
-    ctx.fillText('Bones: ' + bonesCount, 10, 30);
-
+    drawBonesBar(ctx);
+    if (bonesCount < 1) {
+      ctx.fillStyle = 'white';
+      ctx.strokeStyle = "black"
+      ctx.lineWidth = 1;
+      ctx.font = '22px Arial';
+      ctx.fillText('Click or tap in this area to drop bones!', 40, 75);
+      ctx.strokeText('Click or tap in this area to drop bones!', 40, 75);
+    }
+    if (bonesCount < 10) {  
     bones.forEach((bone) => {
       let didCollide = RectsColliding(
-        { x: bone.x, y: bone.y, width: 12, height: 12 },
+        { x: bone.x, y: bone.y, width: 30, height: 30 },
         collisionRect
       );
       if (didCollide === true) {
@@ -120,6 +136,15 @@ const Game = () => {
       didClick = false;
     }
     drawBones(ctx, frameCount);
+
+    } else {
+      ctx.fillStyle = 'white';
+      ctx.strokeStyle = "black"
+      ctx.lineWidth = 1;
+      ctx.font = '32px Arial';
+      ctx.fillText('You returned color to the site!', 20, 180);
+      ctx.strokeText('You returned color to the site!', 20, 180);
+    }
   };
 
   useEffect(() => {
@@ -127,10 +152,17 @@ const Game = () => {
     const context = canvas.getContext('2d');
     let frameCount = 0;
     let animationFrameId;
+    context.miterLimit=2;
 
-    context.canvas.width = 450;
-    context.canvas.height = 400;
-    context.imageSmoothingEnabled = false;
+    let ratio = window.devicePixelRatio;
+
+    context.canvas.width = 450 * ratio;
+    context.canvas.height = 400 * ratio;
+
+    canvas.style.width = 450 + "px";
+    canvas.style.height = 400 + "px";
+
+    canvas.getContext("2d").scale(ratio, ratio);
 
     let cursorPosition;
     didClick = false;
