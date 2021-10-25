@@ -37,7 +37,7 @@ export default function Portfolio() {
           </a>
         </div>
         <div className={styles.Portfolio__project}>
-          <h3 className={styles.Portfolio__column_header}>Development Tools I Like To Use</h3>
+          <h3>Development Tools I Like To Use</h3>
           <div className={styles.Portfolio__columns}>
             <div
               className={`${styles.Portfolio__column} ${styles.Portfolio__column_1}`}>

@@ -12,6 +12,20 @@
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (max-width: 700px) { 
+  .Portfolio__linkBar {
+    flex-direction: column;
+    max-height: none;
+  }
+  .Portfolio__project {
+    white-space: normal !important;
+    padding: 0 auto;
+    max-width: 300px;
+  }
+
+
+}
+
 .Portfolio__linkBar_link {
     padding: 0 .25rem;
 }
@@ -56,6 +70,7 @@
 .Portfolio__column_header {
   font-size: 1em;
   font-weight: bold;
+  color: #2a9d8f;
 }
 
 .Portfolio__column {
