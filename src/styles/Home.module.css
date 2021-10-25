@@ -8,6 +8,11 @@
   margin-bottom: 0;
 }
 
+.Home__tagline_moreVisible {
+  color: #fcfcfc;
+}
+
+
 .Home__tagline_sub {
   margin-top: 0;
   margin-bottom: 3rem;

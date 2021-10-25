@@ -37,7 +37,7 @@ export default function Home() {
       <_Head />
       <Header />
       <main className={`${commonStyles.main} ${commonStyles.centered} `}>
-        <h1 className={styles.Home__tagline}>
+        <h1 className={`${styles.Home__tagline} ${gameCompleted ? '' : styles.Home__tagline_moreVisible}`}>
           {grayscaleValue <= 0
             ? 'A Full Stack Developer Who Actually Loves Color'
             : 'A Full Stack Developer Afraid of Color?'}
