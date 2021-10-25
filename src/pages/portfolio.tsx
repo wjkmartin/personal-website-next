@@ -49,7 +49,6 @@ export default function Portfolio() {
                 <li>Next.js (This site)</li>
                 <li>SASS</li>
                 <li>Styled Components</li>
-                <li>React-Redux</li>
                 <li>Redux</li>
                 <li>Github</li> 
               </ul>
