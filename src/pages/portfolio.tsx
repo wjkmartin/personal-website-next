@@ -37,6 +37,40 @@ export default function Portfolio() {
           </a>
         </div>
         <div className={styles.Portfolio__project}>
+          <h3 className={styles.Portfolio__column_header}>Development Tools I Like To Use</h3>
+          <div className={styles.Portfolio__columns}>
+            <div
+              className={`${styles.Portfolio__column} ${styles.Portfolio__column_1}`}>
+              <h3 className={styles.Portfolio__column_header}>
+                Ones I use frequently
+              </h3>
+              <ul className={styles.Portfolio__columns_list}>
+                <li>React + Hooks</li>
+                <li>Next.js (This site)</li>
+                <li>SASS</li>
+                <li>Styled Components</li>
+                <li>React-Redux</li>
+                <li>Redux</li>
+                <li>Github</li> 
+              </ul>
+            </div>
+            <div className={styles.Portfolio__column}>
+              <h3 className={styles.Portfolio__column_header}>
+                I&apos;ve made projects with
+              </h3>
+              <ul className={styles.Portfolio__columns_list}>
+                <li>Canvas</li>
+                <li>React-Spring</li>
+                <li>Anime.js</li>
+                <li>Web Animation API</li>
+                <li>Firebase</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.Portfolio__project}>
           <h3>Fantasy Quest - An RPG built on the web with React and Redux</h3>
           <video autoPlay loop className={styles.Portfolio__project_video}>
             <source src="/vid.webm" />
@@ -81,16 +115,16 @@ export default function Portfolio() {
           </ul>
           <p>
             All that being said - I still feel the urge to start all over again.
-            I&apos;ve been working on this project part time for the past year, and I
-            feel like with what I&apos;ve learned in that time alone it&apos;s justifiable
-            to start over and restructure things and use new techs, such as
-            Redux Toolkit.
+            I&apos;ve been working on this project part time for the past year,
+            and I feel like with what I&apos;ve learned in that time alone
+            it&apos;s justifiable to start over and restructure things and use
+            new techs, such as Redux Toolkit.
           </p>
           <h3>Where it&apos;s going next:</h3>
           <ul>
             <li>
-              Polish in the styling. There&apos;s still default styles quite a few
-              components.
+              Polish in the styling. There&apos;s still default styles quite a
+              few components.
             </li>
             <li>
               Content - the pieces are in place, but I need to actually create
@@ -99,9 +133,9 @@ export default function Portfolio() {
             </li>
             <li>
               Performance pass. The combat movement animations stutter a little
-              when there&apos;s multiple enemies. This is likely due to rerendering
-              at just the wrong time - I still have to explore that bug more
-              thouroughly.
+              when there&apos;s multiple enemies. This is likely due to
+              rerendering at just the wrong time - I still have to explore that
+              bug more thouroughly.
             </li>
           </ul>
         </div>

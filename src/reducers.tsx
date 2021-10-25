@@ -4,9 +4,9 @@ import * as types from './types';
 const grayscaleReducer = (state = 1, { type, payload }) => {
   switch (type) {
     case types.INCREMENT:
-      return Math.round((state + 0.1)* 10) / 10
+      return Math.round((state + 0.2)* 10) / 10
     case types.DECREMENT:
-      return Math.round((state - 0.1)* 10) / 10
+      return Math.round((state - 0.2)* 10) / 10
     case types.RESET:
       return 1;
     default:

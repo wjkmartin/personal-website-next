@@ -3,18 +3,25 @@
     display: flex;
     justify-content: space-around;
     background-color: #264653;
-    color: #E9C46A;
+    color: #F4A261;
     width: 100vw;
     margin: 0;
     align-items: center;
     font-family: 'Fjalla One', sans-serif;
-    min-height: 3.5rem;
+    max-height: 50px;
     border-top: .3rem solid #264653;
+    padding-top: 20px;
 }
 
 .Header__myName {
-    font-size: 2rem !important;
+    text-align: center;
+    font-size: 2.3rem !important;
     min-width: 165px !important;
+    background-color: #264653 !important;
+    color: #F4A261 !important;
+    padding: 0 1rem !important;
+    align-self: flex-start;
+    text-shadow: 0px 1px 1px #fcfcfc !important;
 }
 
 .Header__linkCluster {
@@ -29,15 +36,14 @@
     text-align: center;
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    padding: 1rem .25rem 1.4rem .25rem;
+    padding: .25rem .25rem 1.4rem .25rem;
     pointer-events:stroke; 
-    height: 100%;
     text-shadow: 0px 1px 1px #fcfcfc;
 }
 
 .Header__link:hover { 
     text-shadow: 0px 1px 1px #e4e2e2;
-    color: #b8a476;
+    color: #a16f46;
 }
 
 .Header__link_currentRoute {
@@ -46,11 +52,9 @@
     font-size: 1.5rem;
     background-color: #fcfcfc;
     color: #264653;
-    padding: 1rem .25rem 1.4rem .25rem;
+    padding: .25rem .25rem 1.4rem .25rem;
     pointer-events:stroke;
-    height: 100%;
     text-shadow: 0px 1px 1px #264653;
-
 }
 
 .Header__modal {
