@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../reducers';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 
@@ -29,6 +29,17 @@ export default function Home() {
     setGameCompleted(true);
   }
 
+  useEffect(() => { 
+    document.addEventListener('mousedown', function (event) {
+      if (event.detail > 1) {
+        event.preventDefault();
+        // of course, you still do not know what you prevent here...
+        // You could also check event.ctrlKey/event.shiftKey/event.altKey
+        // to not prevent something useful.
+      }
+    }, false);
+  }, []);
+
   return (
     <div
       style={grayscaleStyle}
@@ -36,7 +47,7 @@ export default function Home() {
     >
       <_Head />
       <Header />
-      <main className={`${commonStyles.main} ${commonStyles.centered} `}>
+      <main className={`${commonStyles.main} ${commonStyles.centered} ${commonStyles.noSelect}`}>
         <h1 className={`${styles.Home__tagline} ${gameCompleted ? '' : styles.Home__tagline_moreVisible}`}>
           {grayscaleValue <= 0
             ? 'A Full Stack Developer Who Actually Loves Color'

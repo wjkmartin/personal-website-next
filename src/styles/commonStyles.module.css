@@ -44,3 +44,10 @@
   white-space: normal !important;
   padding: 0 2rem;
 }
+
+.noSelect {
+  -webkit-touch-callout: none;  
+    -webkit-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}

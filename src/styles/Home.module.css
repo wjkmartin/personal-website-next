@@ -31,6 +31,7 @@
   /* outline: 4px solid #264653; */
   /* border-radius: 25%; */
   max-width: 200px;
+  user-select: none;
 }
 
 .coolBackground {
@@ -45,11 +46,10 @@
   border-radius: 25%;
   height: inherit;
   width: inherit;
+  user-select: none;
 }
 
-.Home__portrait_image {
-  border-radius: 25%;
-}
+
 
 .Home__pupContainer {
   display: flex;
@@ -123,6 +123,7 @@
     font-size: 0.8em;
     padding: 1rem !important;
     margin: 1rem;
+    user-select: none;
   }
 }
 
