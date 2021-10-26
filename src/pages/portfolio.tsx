@@ -27,14 +27,14 @@ export default function Portfolio() {
             className={styles.Portfolio__linkBar_link}
             href="https://leetcode.com/wjkmartin/"
           >
-            <span style={{ filter: 'grayscale(.95)' }}>🌟</span> L33tCode
+            <span style={{ filter: 'grayscale(.95)' }}>🥇</span> L33tCode
           </a>
-          <a
+          {/* <a
             className={styles.Portfolio__linkBar_link}
             href="https://www.hackerrank.com/wjkmartin"
           >
-            <span style={{ filter: 'grayscale(.95)' }}>🥇</span> HackerRank
-          </a>
+            <span style={{ filter: 'grayscale(.95)' }}></span> HackerRank
+          </a> */}
         </div>
         <div className={styles.Portfolio__project}>
           <h3>Development Tools I Like To Use</h3>
