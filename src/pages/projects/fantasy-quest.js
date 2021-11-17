@@ -12,7 +12,7 @@ export default function FantasyQuest() {
       <_Head />
       <Header />
       <main className={commonStyles.main}>
-        <div className={styles.Portfolio__project}>
+        <div className={styles.Portfolio__project_morePadding}>
           <h3>Fantasy Quest - An RPG built on the web with React and Redux</h3>
           <video autoPlay loop className={styles.Portfolio__project_video}>
             <source src="/vid.webm" />

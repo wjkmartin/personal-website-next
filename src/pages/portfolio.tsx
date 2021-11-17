@@ -39,7 +39,7 @@ export default function Portfolio() {
           </a> */}
         </div>
         <div className={styles.Portfolio__project}>
-          <h3>Development Tools I Like To Use</h3>
+          <h3 className={styles.Portfolio__project_header}>Development Tools I Like To Use</h3>
           <div className={styles.Portfolio__columns}>
             <div
               className={`${styles.Portfolio__column} ${styles.Portfolio__column_1}`}
@@ -72,10 +72,10 @@ export default function Portfolio() {
           </div>
         </div>
         <div className={styles.Portfolio__project}>
-          <h3>Projects</h3>
+          <h3 className={styles.Portfolio__project_header}>Projects</h3>
           <div className={styles.Portfolio__projectButtons}>
-            <Link passHref href="/projects/fantasy-quest"><div className={styles.Portfolio__columns_button}> Fantasy Quest </div></Link>
-            <Link passHref href="/projects/reddit-timer"><div className={styles.Portfolio__columns_button}> Reddit Timer </div></Link>
+            <Link passHref href="/projects/fantasy-quest"><div style={{backgroundImage: "url(/fantasy_quest_thumb.png)", backgroundSize: 'cover'}} className={styles.Portfolio__columns_button}>Fantasy Quest<p className={styles.Portfolio__columns_button_subtitle}>A web RPG</p></div></Link>
+            <Link passHref href="/projects/reddit-timer"><div style={{backgroundImage: "url(/reddit_timer_thumb.png)", backgroundSize: 'cover'}} className={styles.Portfolio__columns_button}> Reddit Timer <p className={styles.Portfolio__columns_button_subtitle}>Post with more impact</p></div></Link>
           </div>
         </div>
       </main>
