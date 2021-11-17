@@ -12,7 +12,7 @@
   font-family: Roboto, sans-serif;
 }
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
   .Portfolio__linkBar {
     flex-direction: column;
     max-height: none;
@@ -22,18 +22,16 @@
     padding: 0 auto;
     max-width: 300px;
   }
-
-
 }
 
 .Portfolio__linkBar_link {
-    padding: 0 .25rem;
+  padding: 0 0.25rem;
 }
 
 .Portfolio__linkBar_link:hover {
-    color: white;
-    padding: 0 .25rem;
-    background-color: #264653;
+  color: white;
+  padding: 0 0.25rem;
+  background-color: #264653;
 }
 
 .Portfolio__project {
@@ -48,16 +46,39 @@
 }
 
 .Portfolio__project_video {
-  width: 100%    !important;
-  height: auto   !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .Portfolio__project_link {
-  color: #000c79
+  color: #000c79;
 }
 
 .Portfolio__project_link:hover {
   text-decoration: underline;
+}
+
+.Portfolio__projectButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.Portfolio__columns_button {
+  width: 20ch;
+  height: 150px;
+  border: 1px solid #3d3d3d;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  line-height: 150px;
+  text-overflow: clip;
+  white-space: nowrap;
+  font-weight: 800;
+  color: #f5efef;
+  text-shadow: .1em .1em 0 hsl(200 50% 30%);
 }
 
 .Portfolio__columns {
@@ -76,7 +97,7 @@
 .Portfolio__column {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #E6ECF8;
+  border-left: 1px solid #e6ecf8;
   width: 50%;
   padding: 0 2em;
 }
@@ -93,5 +114,3 @@
   margin-block-end: 0;
   padding-inline-start: 0;
 }
-
-
