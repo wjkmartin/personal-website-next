@@ -14,7 +14,7 @@ export default function Portfolio() {
   const grayscaleStyle = { filter: `grayscale(${grayscale})` };
 
   return (
-    <div style={grayscaleStyle} className={commonStyles.container}>
+    <div className={commonStyles.container}>
       <_Head />
       <Header />
       <main className={commonStyles.main}>
