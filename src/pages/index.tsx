@@ -40,7 +40,7 @@ export default function Home() {
       <main className={`${commonStyles.main} ${commonStyles.centered} ${commonStyles.verticalCenter}`}>
         <div className={styles.Home__hello}>
           <p className={styles.Home_hello_text}>
-            I&apos;m Will Martin, a software developer based in British Columbia, Canada.
+            I&apos;m <span style={{'color': '#F4A261'}}>Will Martin</span>, a software developer based in British Columbia, Canada.
             <br/> 
             <br/> 
             As we grow more connected by the day, let&apos;s choose to exercise
@@ -51,7 +51,7 @@ export default function Home() {
             that will change the world, or even a small part of it.
             <br/> 
             <br/>
-            Please check out my <a href='/portfolio'>portfolio</a> and contact
+            Please check out my <a style={{color: '#F4A261'}} href='/portfolio'>portfolio</a> and contact
             me if you&apos;d like to work together.
           </p>
         </div>
