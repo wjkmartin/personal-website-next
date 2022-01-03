@@ -4,20 +4,16 @@ import styles from '../styles/Portfolio.module.css';
 import Header from '../common/Header';
 
 import Link from 'next/link';
-
-import { useSelector } from 'react-redux';
-import { RootState } from '../reducers';
+import Image from 'next/image';
 
 export default function Portfolio() {
-  const grayscaleValue = useSelector((state: RootState) => state).grayscale;
-  const grayscale = Math.trunc(grayscaleValue * 100) / 100;
-  const grayscaleStyle = { filter: `grayscale(${grayscale})` };
 
   return (
     <div className={commonStyles.container}>
       <_Head />
       <Header />
       <main className={commonStyles.main}>
+      <Image src="/avatar.svg" alt="Me" width={250} height={250} />
         <div className={styles.Portfolio__linkBar}>
           <a
             className={styles.Portfolio__linkBar_link}
@@ -31,12 +27,7 @@ export default function Portfolio() {
           >
             <span style={{ filter: 'grayscale(.95)' }}>🥇</span> L33tCode
           </a>
-          {/* <a
-            className={styles.Portfolio__linkBar_link}
-            href="https://www.hackerrank.com/wjkmartin"
-          >
-            <span style={{ filter: 'grayscale(.95)' }}></span> HackerRank
-          </a> */}
+
         </div>
         <div className={styles.Portfolio__project}>
           <h3 className={styles.Portfolio__project_header}>Development Tools I Like To Use</h3>

@@ -23,7 +23,7 @@
 .Contact__label {
     padding-bottom: .25rem;
     font-family: 'Fjalla One', sans-serif;
-    color: #2a9d8f;
+    color: #151e3c;
 }
 
 .Contact__smallField {
@@ -56,7 +56,7 @@
     padding: 1rem;  
     margin: 1.5rem 0;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #264653;
+    background-color: #151e3c;
     color: #fcfcfc;
     border: none;
 }

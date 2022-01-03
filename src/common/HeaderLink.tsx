@@ -8,10 +8,15 @@ const HeaderLink = (props) => {
       ? styles.Header__link_currentRoute
       : styles.Header__link;
   return (
-    <Link href={props.href}>
-      <a className={`${style} ${props.text === "WILL MARTIN" ? styles.Header__myName : ''}`}>{props.text}</a>
-    </Link>
-  )
+    <a
+      href={props.href}
+      className={`${style} ${
+        props.currentRoute === '/' ? styles.Header__link_homepageOnly : ''
+      } ${props.text === 'WILL MARTIN' ? styles.Header__myName : ''}`}
+    >
+      {props.text}
+    </a>
+  );
 };
 
 export default HeaderLink;

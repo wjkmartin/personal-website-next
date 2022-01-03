@@ -14,7 +14,7 @@
   flex-direction: column;
   line-height: 1.75;
   font-size: 1.25rem;
-  min-width: 350px;
+  min-width: 300px;
   color: #2b2a2a;
   height: 100%;
 }
@@ -50,4 +50,10 @@
     -webkit-user-select: none; 
         -ms-user-select: none; 
             user-select: none; 
+}
+
+.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
