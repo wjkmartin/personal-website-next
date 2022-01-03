@@ -9,8 +9,9 @@ import commonStyles from '../styles/commonStyles.module.css';
 import styles from '../styles/Home.module.css';
 
 import Image from 'next/image';
-
+declare const window: any;
 export default function Home() {
+  
   return (
     <div id="vantaBG" className={`${commonStyles.container} ${styles.homeBG}`}>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" strategy='afterInteractive'/>
@@ -18,7 +19,8 @@ export default function Home() {
         src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
         strategy='lazyOnload'
         onLoad={() => {
-          window.VANTA.NET({
+          let vanta = window.VANTA;
+          vanta.NET({
             el: '#vantaBG',
             mouseControls: true,
             touchControls: true,
