@@ -19,6 +19,7 @@ export default function FantasyQuest() {
             Reddit Timer - It helps you figure out when to post to a subreddit
           </h3>
           <Image
+            className={styles.Portfolio__project_image}
             width="1913px"
             height="1359px"
             src="/reddit_timer_thumb.png"

@@ -39,10 +39,12 @@ export default function Home() {
       <Header />
       <main className={`${commonStyles.main} ${commonStyles.centered} ${commonStyles.verticalCenter}`}>
         <div className={styles.Home__hello}>
-          <p className={styles.Home_hello_text}>
+          <h1 className={styles.Home__hello_header}>
             I&apos;m <span style={{'color': '#F4A261'}}>Will Martin</span>, a software developer based in British Columbia, Canada.
+          </h1>
             <br/> 
             <br/> 
+            <p className={styles.Home_hello_text}>
             As we grow more connected by the day, let&apos;s choose to exercise
             our creativity and compassion to build something meaningful and impactful.
             <br/>

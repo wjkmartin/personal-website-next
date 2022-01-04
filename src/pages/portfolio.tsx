@@ -14,6 +14,13 @@ export default function Portfolio() {
       <Header />
       <main className={commonStyles.main}>
       <Image src="/avatar.svg" alt="Me" width={250} height={250} />
+      <p className={styles.aboutMe}>
+        I live in the beautiful province of British Columbia, Canada.
+        <br/>
+        I&apos;ve been working as a full stack developer for the past several years on a freelance basis, and my background is in mathematics and computer science.
+        <br/>
+        My passion is building things that are either fun, or help people in some way. 
+      </p>
         <div className={styles.Portfolio__linkBar}>
           <a
             className={styles.Portfolio__linkBar_link}
