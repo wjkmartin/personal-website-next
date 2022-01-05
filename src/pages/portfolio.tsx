@@ -65,6 +65,7 @@ export default function Portfolio() {
                 <li>Web Animation API</li>
                 <li>Firebase</li>
                 <li>MongoDB</li>
+                <li>Golang</li>
               </ul>
             </div>
           </div>
