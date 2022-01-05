@@ -89,7 +89,7 @@ export default function Portfolio() {
               >
                 Fantasy Quest
                 <p className={styles.Portfolio__columns_button_subtitle}>
-                  A web RPG
+                  A web RPG built with React and Redux
                 </p>
               </div>
             </Link>

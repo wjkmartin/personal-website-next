@@ -5,8 +5,8 @@
   background-color: #fcfcfc;
   max-height: 3rem;
   margin-top: 1rem;
-  padding: 0.25rem 1rem;
-  min-width: 350px;
+  padding: 0.25rem 10px;
+  min-width: 675px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   font-family: Roboto, sans-serif;
@@ -32,6 +32,7 @@
     max-height: none;
     box-shadow: none !important;
     border: 1px solid black;
+    min-width: none !important;
   }
   .preface {
     padding: 0 5px !important;
@@ -43,6 +44,7 @@
     max-width: 100%;
     text-align: center;
     box-shadow: none !important;
+    min-width: 0px !important;
   }
   .Portfolio__projectButtons {
     display: flex !important;
@@ -73,6 +75,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   font-family: Roboto, sans-serif;
+  min-width: 675px;
 }
 
 .Portfolio__project_morePadding {
@@ -122,14 +125,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20ch;
+  min-width: 25ch;
   height: 150px;
-  border: 1px solid #2b333628;
   margin: 5px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: Roboto, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   color: #ffffff;
   text-shadow: 0.1em 1px 0 #151e3c, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
