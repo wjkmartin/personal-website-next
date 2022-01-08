@@ -4,9 +4,10 @@ export default async function handler(req, res) {
   console.log(process.env.BOT_USER);
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.netcorecloud.net',
-    port: 587,
-    secure: false,
+    pool: true,
+    host: 'smtp.sendgrid.net',
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.BOT_USER,
       pass: process.env.BOT_PASS,
@@ -17,7 +18,7 @@ export default async function handler(req, res) {
   });
 
   const mailData = {
-    from: 'wjkmartin@pepisandbox.com', // sender address
+    from: 'mail@willmartin.ca', // sender address
     to: 'wjkmartin@gmail.com', // list of receivers
     subject: `This is a message from ${req.body.name} via yer boi MailBot`, // Subject line
     text: `${req.body.message}`, // plain text body
