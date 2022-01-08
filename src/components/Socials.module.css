@@ -1,0 +1,34 @@
+.Socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 5px;
+    top: 45%;
+    background-color: #11131b;
+    width: 60px;
+    height: 180px;
+    z-index: 99;
+}
+
+@media screen and (max-width: 900px) {
+    .Socials {
+        flex-direction: row;
+        position: relative;
+        width: 80%;
+        transform: scale(0.7);
+        background-color: transparent;
+        top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.Socials__item {
+  display: inline-block;
+  max-height: 50px;
+}
+
+.Socials__item:hover {
+  opacity: 0.8;
+}
