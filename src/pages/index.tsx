@@ -48,7 +48,7 @@ export default function Home() {
         <div className={styles.Home__hello}>
           <h1 className={styles.Home__hello_header}>
             I&apos;m <span style={{ color: '#F4A261' }}>Will Martin</span>, a
-            software developer based in British Columbia, Canada.
+            full-stack developer based in British Columbia, Canada.
           </h1>
           <br />
           <br />
