@@ -29,6 +29,7 @@
 .Socials__item {
   display: inline-block;
   max-height: 50px;
+  max-width: 50px;
 }
 
 .Socials__item:hover {
