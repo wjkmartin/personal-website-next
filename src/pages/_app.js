@@ -1,9 +1,13 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import NextNProgress from 'nextjs-progressbar';
 
 export default function App({ Component, pageProps }) {
-
   return (
-      <Component  {...pageProps} />
-  )
+    <>
+      <NextNProgress
+        color="#F4A261"
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
-
