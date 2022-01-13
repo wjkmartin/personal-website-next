@@ -42,7 +42,7 @@ export default function Portfolio() {
         </div>
         <div className={styles.Portfolio__project}>
           <h3 className={styles.Portfolio__project_header}>
-            Development Tools I Like To Use
+            Development Tools
           </h3>
           <div className={styles.Portfolio__columns}>
             <div

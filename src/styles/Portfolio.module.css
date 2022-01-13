@@ -207,9 +207,10 @@
 }
 
 .Portfolio__project_header {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: 800 !important;
   margin-top: 1rem;
+  margin-bottom: 0.25rem !important;
 }
 
 .Portfolio__project_title {

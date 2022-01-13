@@ -85,7 +85,6 @@ export default function FantasyQuest() {
                 And finally the Next.js front end that is used to serve the app.
               </li>
             </ol>
-            <br />
           </p>
           <h4>The Keras Model</h4>
           <p>
@@ -105,8 +104,6 @@ export default function FantasyQuest() {
             a bit of a challenge computationally, as the dataset is very sparse
             due to the fact that a lot of movies have to be included as a zero
             input.
-            <br />
-            <br />
           </p>
           <a href="/model_w_shape.png" target="_blank">
             <Image
@@ -128,7 +125,6 @@ export default function FantasyQuest() {
           >
             You can see the model shape above (click for full size)
           </span>
-          <br />
           <br />
           <p>
           Once I have a demo I&apos;ll be adding more information to this page,
