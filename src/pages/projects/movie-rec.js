@@ -28,9 +28,21 @@ export default function FantasyQuest() {
               alt="A screenshot of Reddit Timer"
             />
           </a>
-          <p style={{textAlign: "center"}}>
+          <span
+            style={{
+              display: 'flex',
+              textAlign: 'center',
+              justifyContent: 'center',
+              fontSize: '0.9rem',
+              fontStyle: 'oblique',
+            }}
+          >
+            The image above describes the four servers used for this project and
+            how they interact. (click to expand in new window)
+          </span>
+          <p style={{ textAlign: 'center' }}>
             I spent too much time trying to figure out what movie to watch, so
-            now machine learning figures that out for me. 
+            now machine learning figures that out for me.
           </p>
           <a
             className={styles.Portfolio__project_link}
@@ -48,36 +60,55 @@ export default function FantasyQuest() {
           >
             and you can find the Apollo server on Github here
           </a>
-          <h4>About this project:</h4>
+          <h4>About this project</h4>
           <p>
-            So this is still a WIP, with no demo just yet. The backend is largely built, the front end is still being actively developed.
-            You can see the above picture of the architecture however for reference to how it all fits together.
-            <br/>
+            So this is still a WIP, with no demo just yet. The backend is
+            largely built, the front end is still being actively developed. You
+            can see the above picture of the architecture however for reference
+            to how it all fits together.
+            <br />
             There are a total of four discrete macro services to this project.
             <ol>
               <li>
-                The python server that is used to train the model with an n-hour configurable cron job. 
+                The python server that is used to train the model with an n-hour
+                configurable cron job.
               </li>
               <li>
-                The Tensorflow serving backend that is used to serve the model to the Apollo server efficiently.
+                The Tensorflow serving backend that is used to serve the model
+                to the Apollo server efficiently.
               </li>
               <li>
-                The Apollo backend that is used for data amalagation and querying.
+                The Apollo backend that is used for data amalagation and
+                querying.
               </li>
               <li>
                 And finally the Next.js front end that is used to serve the app.
               </li>
+            </ol>
             <br />
-            My methodology for the machine learning model was to have the input tensors be based on both the quantative features of user ratings, as well as the qualitative features of the movie, such as the director, screenwriter, lead actors, etc. 
-            This is because my primary supposition is that the user will more likely be interested in movies by their favorite directors and actors. Sounds simple, right? 
+          </p>
+          <h4>The Keras Model</h4>
+          <p>
+            My methodology for the machine learning model was to have the input
+            tensors be based on both the quantative features of user ratings, as
+            well as the qualitative features of the movie, such as the director,
+            screenwriter, lead actors, etc. This is because my primary
+            supposition is that the user will more likely be interested in
+            movies by their favorite directors and actors. Sounds simple, right?
             <br />
             <br />
-            This ended up being the most complicated model I&apos;ve ever built. I spent a lot of time trying to figure out the correct way to model the data and transform it to make it easy and fast to encode.
-            <br /> 
-            There are a lot of input features, and the ratings in particular are a bit of a challenge computationally, as the dataset is very sparse due to the fact that a lot of movies have to be included as a zero input.
+            This ended up being the most complicated model I&apos;ve ever built.
+            I spent a lot of time trying to figure out the correct way to model
+            the data and transform it to make it easy and fast to encode.
+            <br />
+            There are a lot of input features, and the ratings in particular are
+            a bit of a challenge computationally, as the dataset is very sparse
+            due to the fact that a lot of movies have to be included as a zero
+            input.
             <br />
             <br />
-            <a href="/model_w_shape.png" target="_blank">
+          </p>
+          <a href="/model_w_shape.png" target="_blank">
             <Image
               className={styles.Portfolio__project_image}
               width="2000px"
@@ -86,21 +117,33 @@ export default function FantasyQuest() {
               alt="A screenshot of Reddit Timer"
             />
           </a>
-          You can see the model shape above (click for full size)
+          <span
+            style={{
+              display: 'flex',
+              textAlign: 'center',
+              justifyContent: 'center',
+              fontSize: '0.9rem',
+              fontStyle: 'oblique',
+            }}
+          >
+            You can see the model shape above (click for full size)
+          </span>
           <br />
           <br />
-          Once I have a demo I&apos;ll be adding more information to this page, so stay tuned!
-            </ol>
+          <p>
+          Once I have a demo I&apos;ll be adding more information to this page,
+          so stay tuned!
           </p>
           <h4>What I&apos;ve learned on this project so far:</h4>
           <ul>
-            <li>Some of the finer points of designing and serving Keras models</li>
+            <li>
+              Some of the finer points of designing and serving Keras models
+            </li>
             <li>Dataset cleaning</li>
             <li>How to deal with many datasources on an Apollo server</li>
             <li>Google Cloud Services (Realtime server, Auth, Firebase DB)</li>
             <li>The importance of microservices</li>
           </ul>
-         
         </div>
       </main>
     </div>
